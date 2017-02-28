@@ -159,7 +159,7 @@
                                     url: "data/regDetails_into_db.php",
                                     data: "ntitle="+title+"&nfname="+fname+"&nlname="+lname+"&naddress="+address+"&ncity="+city+"&ncountry="
   	                                         +country+"&nuname="+uname+"&npass="+pass+"&nemail="+email+"&nday="+day+"&nmonth="+month+"&nyear="
-                                               +year+"&nmobile="+mobile+,
+                                               +year+"&nmobile="+phone+,
                                     success: function(e){
                 						$("#msg").text(e);
     					           }
