@@ -133,40 +133,45 @@
             <script src="js/jquery.js"></script>
             <script>
                     $(function(){
-                        $("#signup").click(function(e){
-                            e.preventDefault();
-                
-                            var title = $("#title").val().trim();
-                            var fname = $("#fname").val().trim();
-                            var lname = $("#lname").val().trim();
-                            var address = $("#residence").val().trim();
-                            var city = $("#residence-city").val().trim();
-                            var country = $("#country").val().trim();
-                            var uname = $("#uname").val().trim();
-                            var pass = $("#pword").val().trim();
-                            var Cpass = $("#Cpword").val().trim();
-                            var email = $("#mail").val().trim();
-                			var day = $("#day").val().trim();
-                            var month = $("#month").val().trim();
-                            var year = $("#year").val().trim();
-                            var mobile = $("#phone").val().trim();
                             
-                             if(Cpword!=pword){
-                               $("#errMsg").text("");
+                        var Cpass = $("#Cpword").val();
+                        $("#Cpword").keyup(function(e){
+                            
+                            var pass = $("#pword").val();
+                            if(pass == $(this).val()){
+                             $("#errMsg").text("Passwords match.");
                              }else{
-                                $.ajax({
+                                $("#errMsg").text("Passwords dont match.");
+                             }
+                        });
+                        
+                            $("#signup").click(function(e){
+                                e.preventDefault();
+                                
+                                var title = $("#title").val().trim();
+                                var fname = $("#fname").val().trim();
+                                var lname = $("#lname").val().trim();
+                                var address = $("#residence").val().trim();
+                                var city = $("#residence-city").val().trim();
+                                var country = $("#country").val().trim();
+                                var uname = $("#uname").val().trim();
+                                var email = $("#mail").val().trim();
+    		                    var day = $("#day").val().trim();
+                                var month = $("#month").val().trim();
+                                var year = $("#year").val().trim();
+                                var mobile = $("#phone").val().trim();
+                            
+                                    $.ajax({
                                     type: "POST",
                                     url: "data/regDetails_into_db.php",
                                     data: "ntitle="+title+"&nfname="+fname+"&nlname="+lname+"&naddress="+address+"&ncity="+city+"&ncountry="
-  	                                         +country+"&nuname="+uname+"&npass="+pass+"&nemail="+email+"&nday="+day+"&nmonth="+month+"&nyear="
-                                               +year+"&nmobile="+phone+,
+                                             +country+"&nuname="+uname+"&npass="+pass+"&nemail="+email+"&nday="+day+"&nmonth="+month+"&nyear="
+                                               +year+"&nmobile="+mobile,
                                     success: function(e){
-                						$("#msg").text(e);
-    					           }
-    				            });
-                            }
-                        
-                        });
+                						$("#errMsg").text(e);
+					                       }
+				                 });
+                            });
                     });
             </script>
         </body>
