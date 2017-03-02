@@ -1,0 +1,44 @@
+body {
+    background-image: url(images/uefa.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+a {
+    font-family: 'Raleway';
+    color: white !important;
+}
+
+a:hover {
+    background: none !important;
+}
+
+.login {
+    border-radius: 0 !important;
+    margin: 1rem 0 !important;
+    padding: .9rem 15px !important;
+    border-bottom-right-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+}
+
+input {
+    color: white;
+    margin-bottom: 10px;
+    display: inline-block !important; 
+    font-weight: 500 !important;
+    width: 150px !important;
+    font-family: 'Raleway' !important;
+    padding: 1rem 2rem !important;
+    border-radius: 40px !important;
+    border: none !important;
+}
+
+input:focus {
+    border: none !important;
+}
+
+[type="password"] {
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}

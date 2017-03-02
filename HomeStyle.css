@@ -1,0 +1,106 @@
+.homeContainer {
+    padding: 2rem;
+    background-image: url(images/stadium2.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 600px;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    overflow: auto;
+}
+
+.col-md-12 {
+    margin-top: 50px;
+}
+
+h2 {
+    font-family: serif !important; 
+    font-weight: bolder;
+    text-shadow: 1px 1px 6px black;
+    color: white !important;
+    font-size: 57px;
+}
+
+.advert {
+    color: white;
+    font-family: 'Raleway';
+    font-weight: 700;
+    padding: 1rem;
+    width: 100%;
+    background-color: brown;
+    margin-top: 20px;
+}
+
+.video-container {
+    
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+    padding-left:30px;
+    padding-right:30px;
+	height:0;
+	overflow:hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {    
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+iframe {    
+    border: 5px solid brown;    
+}
+
+.btn {
+    margin: 1rem;
+    border-radius: 40px;
+    font-weight: bolder !important;
+    font-size: 16px !important;
+    padding: 1.5rem 4rem !important;
+}
+
+.textfield {
+    padding: 2rem !important;
+    width: 100% !important;
+    color: #fff;
+    background-color: #428bca;
+    border-radius: 0 !important;
+}
+
+.textfield:focus {
+    background-color: #1b5e98;
+}
+
+select {
+    margin-bottom: 10px;
+    padding: 1.2rem !important;
+    width: 100% !important;
+    color: #f8f8f8;
+    background-color: brown;
+    border-radius: 0 !important; 
+}
+
+.modal {
+    overflow: auto;
+}
+
+.textfield::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    white;
+}
+.textfield:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    white;
+   opacity:  1;
+}
+.textfield::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    white;
+   opacity:  1;
+}
+.textfield:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    white;
+}

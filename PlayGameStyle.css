@@ -1,0 +1,71 @@
+body {
+    overflow: visible !important;
+}
+
+.playGameContainer {
+    padding: 2rem !important;
+    background: white;
+}
+
+.col-md-8 {
+    padding: 0 !important;
+}
+
+.number {
+    margin: 0 2rem;
+    padding: 1rem 1.7rem !important;
+}
+
+.btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    font-weight: bolder !important;
+    font-size: 16px !important;
+    padding: 1.5rem 4rem !important;
+}
+
+.h4red {
+    color: brown !important;
+}
+
+.list-group {
+    margin-top: 30px;
+}
+
+.list-group-item {
+    font-weight: bolder;
+    color: black !important;
+    background: none !important;
+    box-shadow: none !important;
+    border: 1px solid #1b5e98 !important;
+    border-radius: 40px !important;
+    margin-bottom: 15px;
+}
+
+.list-group-item:hover {
+    color: white !important;
+    background: #1b5e98 !important;
+}
+
+.hA {
+    margin-top: 20px !important;    
+}
+
+.h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.h2center {
+    text-align: center;
+}
+
+.DownSide {
+    margin: 20px 0 !important;
+    padding: 2rem;
+    height: 250px !important;
+    background-color: #1b5e98;
+}
